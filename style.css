@@ -140,6 +140,10 @@ main section:nth-child(3){
 }
 
 
+section ul li {
+    animation: fromLeft 2s backwards;
+}
+
 @keyframes fromTop {
     from {
         opacity: 0;
@@ -162,5 +166,16 @@ main section:nth-child(3){
     to {
         opacity: 1;
         transform: translatey(0)
+    }
+}
+
+
+@keyframes fromLeft {
+    from{
+        transform: translate(50px)
+    }
+
+    to{
+        transform: translate(0px)
     }
 }
